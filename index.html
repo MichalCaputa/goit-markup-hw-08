@@ -4,44 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Michał Caputa" />
     <title>Web Studio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <!-- naglowek strony-->
-    <header>
+
+    <header class="head-container">
       <div>
         <p>
-          <a href="index.html">WebStudio</a>
+          <a href="index.html">
+            <p class="logo-first">Web<span class="logo-sec">Studio</span></p></a
+          >
         </p>
       </div>
 
       <div>
-        <nav>
+        <nav class="navigation">
           <!-- nawigacja -->
-          <a href="#Agencja">Agencja</a>
-          <a href="#Portfolio">Portfolio</a>
-          <a href="#Kontakt">Kontakt</a>
+          <a class="navi-button" href="#Agencja">Agencja</a>
+          <a class="navi-button" href="portfolio.html" target="_self"
+            >Portfolio</a
+          >
+          <a class="navi-button" href="#Kontakt">Kontakt</a>
         </nav>
       </div>
       <div>
-        <a href="mailto:info@studio.com"> info@studio.com</a>
-        <a href="call:+48111111111">+48 111 111 111</a>
+        <a class="contact-us" href="mailto:info@studio.com"> info@studio.com</a>
+        <a class="contact-us" href="call:+48111111111">+48 111 111 111</a>
       </div>
     </header>
-
-    <div>
-      <h1 id="Agencja">Efektywne rozwiazania dla waszego biznesu</h1>
-      <button>zamow usluge</button>
-    </div>
     <!--main-->
     <main>
+      <div class="main-container">
+        <h1 id="Agencja">Efektywne rozwiazania dla waszego biznesu</h1>
+        <button class="button-color">zamow usluge</button>
+      </div>
+
       <section>
         <ul>
           <li>
             <div>
-              <h3 id="Portfolio">Lorem, ipsum.</h3>
-              <p>
+              <h3 class="title-desc">Lorem, ipsum.</h3>
+              <p class="text-desc">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
                 excepturi obcaecati placeat praesentium esse asperiores quo
                 voluptas maxime ipsa quisquam.
@@ -50,8 +58,8 @@
           </li>
           <li>
             <div>
-              <h3>Lorem, ipsum.</h3>
-              <p>
+              <h3 class="title-desc">Lorem, ipsum.</h3>
+              <p class="text-desc">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
                 excepturi obcaecati placeat praesentium esse asperiores quo
                 voluptas maxime ipsa quisquam.
@@ -60,8 +68,8 @@
           </li>
           <li>
             <div>
-              <h3>Lorem, ipsum.</h3>
-              <p>
+              <h3 class="title-desc">Lorem, ipsum.</h3>
+              <p class="text-desc">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
                 excepturi obcaecati placeat praesentium esse asperiores quo
                 voluptas maxime ipsa quisquam.
@@ -70,8 +78,8 @@
           </li>
           <li>
             <div>
-              <h3>Lorem, ipsum.</h3>
-              <p>
+              <h3 class="title-desc">Lorem, ipsum.</h3>
+              <p class="text-desc">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
                 excepturi obcaecati placeat praesentium esse asperiores quo
                 voluptas maxime ipsa quisquam.
@@ -81,7 +89,7 @@
         </ul>
       </section>
       <section>
-        <h2>Czym sie zajmujemy?</h2>
+        <h2 class="about-us">Czym sie zajmujemy?</h2>
         <ul>
           <li>
             <img
@@ -109,8 +117,8 @@
           </li>
         </ul>
       </section>
-      <div>
-        <h2>Nasz zespół</h2>
+      <div class="workers">
+        <h2 class="workers-title">Nasz zespół</h2>
         <figure>
           <!-- Dowolna tresc graficzna: zdjecie, wykres, diagram itp. -->
         </figure>
@@ -123,11 +131,10 @@
                 width="270"
                 height="260"
               />
-            </figure>
-            <figure>
+
               <figcaption>
-                <p>John doe</p>
-                <p>Product Designer</p>
+                <p class="full-name">John doe</p>
+                <p class="profesion">Product Designer</p>
               </figcaption>
             </figure>
           </li>
@@ -139,11 +146,10 @@
                 width="270"
                 height="260"
               />
-            </figure>
-            <figure>
+
               <figcaption>
-                <p>John doe</p>
-                <p>Frontend Developer</p>
+                <p class="full-name">John doe</p>
+                <p class="profesion">Frontend Developer</p>
               </figcaption>
             </figure>
           </li>
@@ -155,11 +161,10 @@
                 width="270"
                 height="260"
               />
-            </figure>
-            <figure>
+
               <figcaption>
-                <p>John doe</p>
-                <p>Marketing</p>
+                <p class="full-name">John doe</p>
+                <p class="profesion">Marketing</p>
               </figcaption>
             </figure>
           </li>
@@ -171,21 +176,27 @@
                 width="270"
                 height="260"
               />
-            </figure>
-            <figure>
+
               <figcaption>
-                <p>John doe</p>
-                <p>UI Designer</p>
+                <p class="full-name">John doe</p>
+                <p class="profesion">UI Designer</p>
               </figcaption>
             </figure>
           </li>
         </ul>
       </div>
-
-      <h3 id="Kontakt"><a href="index.html">WebStudio</a></h3>
-      <address>m. Warszawa, Aleje Jerozolimskie 21</address>
-      <a href="mailto:info@example.com">info@example.com</a>
-      <a href="tel:+48111111111">+48 111 111 111</a>
+      <footer class="footer-info">
+        <h3 id="Kontakt">
+          <a href="index.html">
+            <p class="logo-first">Web<span class="logo-sec">Studio</span></p></a
+          >
+        </h3>
+        <address class="street">m. Warszawa, Aleje Jerozolimskie 21</address>
+        <a class="contact-us" href="mailto:info@example.com"
+          >info@example.com</a
+        >
+        <a class="contact-us" href="tel:+48111111111">+48 111 111 111</a>
+      </footer>
     </main>
   </body>
 </html>

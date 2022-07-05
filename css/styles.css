@@ -1,0 +1,97 @@
+body {
+  color: var(--black-color);
+}
+:root {
+  --black-color: #212121;
+  --logofirst-color: #2196f3;
+  --logosec-color: #000000;
+  --head-background: #ececec;
+  --grey-color: #757575;
+  --select-bgcolor: #2196f3;
+  --bg-color: #2f303a;
+  --white-color: #ffffff;
+  --button-bg-color: #2196f3;
+  --desc-color: #757575;
+  --workers-bgcolor: #f5f4fa;
+}
+/* logo */
+.logo-first > a {
+  color: var(--logofirst-color);
+}
+.logo-sec {
+  color: var(--logosec-color);
+}
+/* header */
+.head-container {
+  background-color: var(--head-background);
+}
+.contact-us {
+  color: var(--grey-color);
+}
+.contact-us:hover {
+  color: var(--select-bgcolor);
+}
+.contact-us:focus {
+  color: var(--select-bgcolor);
+}
+/* navi buttons */
+.navi-button {
+  color: var(--black-color);
+}
+.navi-button:hover {
+  color: var(--select-bgcolor);
+}
+.navi-button:focus {
+  color: var(--select-bgcolor);
+}
+
+/* a */
+a {
+  text-decoration: none;
+}
+/* ul li */
+ul {
+  list-style-type: none;
+}
+/* main  - EFEKTY*/
+.main-container {
+  background-color: var(--bg-color);
+  color: var(--white-color);
+}
+.button-color {
+  background-color: var(--button-bg-color);
+  color: var(--white-color);
+}
+/* description */
+.title-desc {
+  /* czcionka */
+}
+.text-desc {
+  color: var(--desc-color);
+}
+/* about-us */
+.about-us {
+  /* czcionka */
+}
+/* team */
+.workers {
+  background-color: var(--workers-bgcolor);
+}
+.workers-title {
+  /* czcionka */
+}
+.full-name {
+  color: var(--black-color);
+}
+.profesion {
+  color: var(--grey-color);
+}
+/* footer */
+.footer-info {
+  background-color: var(--bg-color);
+}
+.street {
+  color: var(--white-color);
+  font-size: 14px;
+  width: 252px;
+}
