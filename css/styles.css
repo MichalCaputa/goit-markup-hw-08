@@ -21,6 +21,9 @@ body {
 .logo-sec {
   color: var(--logosec-color);
 }
+.logo-third {
+  color: var(--white-color);
+}
 /* header */
 .head-container {
   background-color: var(--head-background);
@@ -61,6 +64,13 @@ ul {
 .button-color {
   background-color: var(--button-bg-color);
   color: var(--white-color);
+  border: var(--bg-color);
+}
+.button-portfolio:hover {
+  background-color: var(--button-bg-color);
+  color: var(--white-color);
+  cursor: pointer;
+  border: var(--white-color);
 }
 /* description */
 .title-desc {
