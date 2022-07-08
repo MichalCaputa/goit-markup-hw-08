@@ -75,6 +75,8 @@ ul {
   background-color: var(--button-bg-color);
   color: var(--white-color);
   border: var(--bg-color);
+  padding: 10px 41px 10px 42px;
+  border-radius: 4px;
 }
 .button-color:hover {
   background-color: var(--button-bg-color);
@@ -88,9 +90,11 @@ ul {
   cursor: pointer;
   border: var(--white-color);
   border: px solid none;
-
   font-weight: 500;
   font-size: 16px;
+  font-style: normal;
+  padding: 6px 22px 6px 22px;
+  border-radius: 4px;
 }
 
 .button-portfolio:hover {
@@ -103,8 +107,10 @@ ul {
 /* description */
 .title-desc {
   /* czcionka */
-  /* font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
+  /* 
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
 
   font-weight: 700;
   font-size: 14px;
