@@ -6,7 +6,7 @@ body {
   --black-color: #212121;
   --logofirst-color: #2196f3;
   --logosec-color: #000000;
-  --head-background: #ececec;
+  --head-background: #ffffff;
   --grey-color: #757575;
   --select-bgcolor: #2196f3;
   --bg-color: #2f303a;
@@ -31,6 +31,7 @@ body {
 /* header */
 .head-container {
   background-color: var(--head-background);
+  border-color: #ececec;
 }
 .contact-us {
   color: var(--grey-color);
