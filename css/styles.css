@@ -66,6 +66,7 @@ a {
 /* ul li */
 ul {
   list-style-type: none;
+  display: flex;
 }
 /* main  - EFEKTY*/
 .main-container {
