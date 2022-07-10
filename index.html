@@ -7,6 +7,10 @@
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Michał Caputa" />
     <title>Web Studio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,8 +23,8 @@
   <body>
     <!-- naglowek strony-->
 
-    <header class="head-container">
-      <div>
+    <header class="head-container container">
+      <div class="header-div">
         <p>
           <a href="index.html">
             <p class="logo-first">Web<span class="logo-sec">Studio</span></p></a
@@ -29,26 +33,30 @@
       </div>
       <nav class="navigation">
         <!-- nawigacja -->
-        <a class="navi-button" href="index.html">Agencja</a>
-        <a class="navi-button" href="portfolio.html" target="_self"
-          >Portfolio</a
-        >
-        <a class="navi-button" href="#Kontakt">Kontakt</a>
+        <ul class="nav-list">
+        <li><a class="navi-button" href="index.html">Agencja</a></li>
+        <li><a class="navi-button" href="portfolio.html" target="_self"
+          >Portfolio</a></li>
+        
+        <li><a class="navi-button" href="#Kontakt">Kontakt</a></li>
+      </ul>
       </nav>
       <div>
-        <a class="contact-us" href="mailto:info@studio.com"> info@studio.com</a>
-        <a class="contact-us" href="call:+48111111111">+48 111 111 111</a>
+        <ul class="contact-list">
+        <li><a class="contact-us" href="mailto:info@studio.com"> info@studio.com</a></li>
+        <li><a class="contact-us" href="call:+48111111111">+48 111 111 111</a></li>
+      </ul>
       </div>
     </header>
     <!--main-->
-    <main>
+    <main class="container">
       <div class="main-container">
         <h1 class="text-main">Efektywne rozwiazania dla waszego biznesu</h1>
-        <button class="button-color text-main-button">zamow usluge</button>
+        <button type="button" class="button-color text-main-button">zamow usluge</button>
       </div>
 
-      <section>
-        <ul>
+      <section class="desc-section container">
+        <ul class="desc-list">
           <li>
             <div>
               <h3 class="title-desc">Lorem, ipsum.</h3>
@@ -120,7 +128,7 @@
           </li>
         </ul>
       </section>
-      <div class="workers">
+      <div class="workers container">
         <h2 class="workers-title">Nasz zespół</h2>
 
         <!-- Dowolna tresc graficzna: zdjecie, wykres, diagram itp. -->
@@ -187,8 +195,9 @@
             </figure>
           </li>
         </ul>
-      </div>
-      <footer class="footer-info">
+      </div> 
+     </main>
+      <footer class="footer-info container"">
         <h3 class="logo-first" id="Kontakt">
           <a href="index.html">
             <p class="logo-first">
@@ -202,6 +211,6 @@
         >
         <a class="contact-us" href="tel:+48111111111">+48 111 111 111</a>
       </footer>
-    </main>
+  
   </body>
 </html>

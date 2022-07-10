@@ -22,6 +22,13 @@ body {
 
   font-size: 26px;
 }
+nav {
+  display: flex;
+}
+header .container {
+  display: flex;
+}
+
 .logo-sec {
   color: var(--logosec-color);
 }
@@ -29,9 +36,26 @@ body {
   color: var(--white-color);
 }
 /* header */
+.header-div {
+  padding-left: 215px;
+  padding-right: 93px;
+}
 .head-container {
   background-color: var(--head-background);
   border-color: #ececec;
+  display: flex;
+}
+.nav-list {
+  display: flex;
+  gap: 46px;
+  align-items: center;
+}
+.contact-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 50px;
+  padding-left: 371px;
 }
 .contact-us {
   color: var(--grey-color);
@@ -67,11 +91,18 @@ a {
 ul {
   list-style-type: none;
   display: flex;
+  align-items: center;
+}
+img {
+  display: block;
 }
 /* main  - EFEKTY*/
 .main-container {
   background-color: var(--bg-color);
   color: var(--white-color);
+  height: 600px;
+  width: 1600px;
+  text-align: center;
 }
 .button-color {
   background-color: var(--button-bg-color);
@@ -79,6 +110,9 @@ ul {
   border: var(--bg-color);
   padding: 10px 41px 10px 42px;
   border-radius: 4px;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
 }
 .button-color:hover {
   background-color: var(--button-bg-color);
@@ -107,6 +141,17 @@ ul {
   border: 0px solid black;
 }
 /* description */
+.desc-section {
+  display: flex;
+  gap: 30px;
+  padding-top: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
+  padding-bottom: 94px;
+}
+.desc-list {
+  display: flex;
+}
 .title-desc {
   /* czcionka */
   /* 
@@ -116,7 +161,7 @@ font-family: 'Roboto', sans-serif;
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 100%;
   text-align: left;
   vertical-align: top;
   letter-spacing: 0.03em;
@@ -126,7 +171,7 @@ font-family: 'Roboto', sans-serif;
   font-family: Roboto;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 24px;
 
   text-align: Left;
   vertical-align: Top;
@@ -137,19 +182,21 @@ font-family: 'Roboto', sans-serif;
   font-family: Roboto;
   font-style: Black;
   font-size: 44px;
-  line-height: 0.7;
-
+  line-height: 116%;
   vertical-align: Top;
   letter-spacing: 6%;
+  padding-top: 200px;
+  margin-bottom: 30px;
+  width: 696px;
 }
 .text-main-button {
   text-align: center;
   font-family: Roboto;
   font-style: bold;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 160%;
   vertical-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 6%;
 }
 /* about-us */
 .about-us {
@@ -200,4 +247,12 @@ font-family: 'Roboto', sans-serif;
   font-size: 14px;
   width: 252px;
   font-size: 14px;
+}
+/* ZAD 3*/
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 0 auto;
 }
