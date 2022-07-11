@@ -303,6 +303,7 @@ h1 {
   flex-wrap: wrap;
   gap: 30px;
   padding-left: 0;
+  padding-bottom: 94px;
 }
 
 .buttons-portfolio {
