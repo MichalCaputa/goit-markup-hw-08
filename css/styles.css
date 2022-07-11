@@ -63,7 +63,7 @@ header .container {
 .contact-us {
   color: var(--grey-color);
 
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 14px;
 }
 .contact-us:hover {
@@ -76,7 +76,7 @@ header .container {
 .navi-button {
   color: var(--black-color);
 
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 14px;
 }
 .navi-button:hover {
@@ -134,6 +134,7 @@ img {
   font-style: normal;
   padding: 6px 22px 6px 22px;
   border-radius: 4px;
+  line-height: 1.2;
 }
 
 .button-portfolio:hover {
@@ -310,7 +311,6 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 8px;
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.71;
@@ -325,4 +325,7 @@ h1 {
   width: 370px;
   height: 404px;
   margin: 0 auto;
+}
+button {
+  font-family: "Roboto", sans-serif;
 }
