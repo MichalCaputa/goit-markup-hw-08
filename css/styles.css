@@ -44,6 +44,7 @@ header .container {
   background-color: var(--head-background);
   border-color: #ececec;
   display: flex;
+  border-bottom: 1px solid #ececec;
 }
 .nav-list {
   display: flex;
@@ -93,6 +94,7 @@ ul {
   display: flex;
   align-items: center;
 }
+
 img {
   display: block;
 }
@@ -125,7 +127,6 @@ img {
   color: var(--black-color);
   cursor: pointer;
   border: var(--white-color);
-  border: px solid none;
   font-weight: 500;
   font-size: 16px;
   font-style: normal;
@@ -168,7 +169,7 @@ font-family: 'Roboto', sans-serif;
 }
 .text-desc {
   color: var(--desc-color);
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
@@ -179,7 +180,7 @@ font-family: 'Roboto', sans-serif;
 }
 .text-main {
   text-align: center;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: Black;
   font-size: 44px;
   line-height: 116%;
@@ -191,7 +192,7 @@ font-family: 'Roboto', sans-serif;
 }
 .text-main-button {
   text-align: center;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: bold;
   font-size: 16px;
   line-height: 160%;
@@ -199,12 +200,31 @@ font-family: 'Roboto', sans-serif;
   letter-spacing: 6%;
 }
 /* about-us */
+.about-us-items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 94px;
+}
 .about-us {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
 }
 /* team */
+.workers-list {
+  padding-bottom: 94px;
+  display: flex;
+  justify-content: center;
+}
+figure {
+  background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  height: 368px;
+  align-items: stretch;
+}
 .workers {
   background-color: var(--workers-bgcolor);
 }
@@ -212,6 +232,7 @@ font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
+  padding-top: 94px;
 }
 .full-name {
   color: var(--black-color);
@@ -255,4 +276,38 @@ font-family: 'Roboto', sans-serif;
 }
 h1 {
   margin: 0 auto;
+}
+.footer-text {
+  padding-left: 215px;
+  padding-top: 20px;
+}
+.footer-container {
+  padding-left: 215px;
+  padding-bottom: 60px;
+  display: block;
+}
+.contact-us-footer {
+  display: inline-block;
+  padding: 0;
+}
+/* nazwa do zmiany */
+.technocrack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.buttons-portfolio {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border-radius: 4px;
+  padding-top: 94px;
+  padding-bottom: 34px;
 }
