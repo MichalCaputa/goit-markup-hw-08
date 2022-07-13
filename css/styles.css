@@ -34,6 +34,11 @@ nav {
 .logo-third {
   color: var(--white-color);
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* header */
 .head-container {
   background-color: var(--head-background);
@@ -144,8 +149,7 @@ img {
 .desc-section {
   display: flex;
   gap: 30px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0;
 }
 .desc-list {
   display: flex;
@@ -171,7 +175,6 @@ font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
-
   text-align: Left;
   vertical-align: Top;
   letter-spacing: 0.03em;
@@ -202,7 +205,6 @@ font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
   gap: 45px;
-  padding-bottom: 94px;
   padding-left: 0;
 }
 .about-us {
@@ -216,7 +218,6 @@ font-family: 'Roboto', sans-serif;
   justify-content: center;
   gap: 30px;
   padding: 0;
-  padding-bottom: 94px;
 }
 figure {
   background-color: var(--white-color);
@@ -234,7 +235,6 @@ figure {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  padding-top: 94px;
 }
 .full-name {
   color: var(--black-color);
@@ -300,7 +300,7 @@ h1 {
   flex-wrap: wrap;
   gap: 30px;
   padding-left: 0;
-  padding-bottom: 94px;
+  margin: 0 auto;
 }
 
 .buttons-portfolio {
@@ -313,8 +313,10 @@ h1 {
   letter-spacing: 0.03em;
   cursor: pointer;
   border-radius: 4px;
-  padding-top: 94px;
+
   padding-bottom: 34px;
+  margin: 0 auto;
+  padding-left: 0;
 }
 .product {
   border: 1px solid #eeeeee;
