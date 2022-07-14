@@ -149,8 +149,6 @@ img {
 }
 /* description */
 .desc-section {
-  display: flex;
-  gap: 30px;
   padding-bottom: 0;
 }
 .desc-list {
