@@ -88,6 +88,9 @@ nav {
 }
 
 /* a */
+h3 {
+  margin: 0 auto;
+}
 a {
   text-decoration: none;
 }
@@ -97,7 +100,6 @@ ul {
   display: flex;
   align-items: center;
 }
-
 img {
   display: block;
 }
@@ -155,6 +157,7 @@ img {
   display: flex;
   padding: 0;
   margin: 0 auto;
+  gap: 30px;
 }
 .title-desc {
   /* czcionka */
@@ -175,10 +178,10 @@ font-family: 'Roboto', sans-serif;
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.4;
   text-align: Left;
   vertical-align: Top;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
 .text-main {
   text-align: center;
@@ -207,11 +210,13 @@ font-family: 'Roboto', sans-serif;
   justify-content: center;
   gap: 45px;
   padding-left: 0;
+  margin: 0 auto;
 }
 .about-us {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
+  margin-top: 0;
 }
 /* team */
 .workers-list {
@@ -268,6 +273,11 @@ img {
   align-self: flex-start;
 }
 /* footer */
+.footer-text > a > p {
+  padding-bottom: 20px;
+  margin: 0 auto;
+  /* nie wiem czy to tak może wyglądać i czy to jest funkcjonalne w jakiś sposób */
+}
 .footer-info {
   background-color: var(--bg-color);
 }
