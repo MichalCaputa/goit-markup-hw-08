@@ -104,6 +104,9 @@ img {
   display: block;
 }
 /* main  - EFEKTY*/
+.button-main {
+  /* chyba niepotrzebne */
+}
 .main-container {
   background-color: var(--bg-color);
   color: var(--white-color);
@@ -153,8 +156,9 @@ img {
 }
 .desc-list {
   display: flex;
-  padding: 0;
   margin: 0 auto;
+  padding-left: 0;
+  padding-bottom: 0;
   gap: 30px;
 }
 .title-desc {
@@ -190,7 +194,7 @@ font-family: 'Roboto', sans-serif;
   vertical-align: Top;
   letter-spacing: 6%;
   padding-top: 200px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   width: 696px;
 }
 .text-main-button {
