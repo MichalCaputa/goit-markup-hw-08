@@ -155,12 +155,13 @@ img {
 }
 /* description */
 .desc-section {
+  display: flex;
   padding-bottom: 0;
+  justify-content: space-between;
 }
 .desc-list {
   display: flex;
   margin: 0 auto;
-  justify-content: space-between;
   padding-left: 0;
   gap: 30px;
 }
