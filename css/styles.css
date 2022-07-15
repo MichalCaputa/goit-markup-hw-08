@@ -163,7 +163,7 @@ img {
   display: flex;
   margin: 0 auto;
   padding-left: 0;
-  gap: 30px;
+  gap: 35px;
 }
 .desc-list > li {
   width: 270px;
