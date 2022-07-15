@@ -110,9 +110,12 @@ img {
 .main-container {
   background-color: var(--bg-color);
   color: var(--white-color);
-  height: 600px;
+
   width: 1600px;
   text-align: center;
+}
+.container-height {
+  height: 600px;
 }
 .button-color {
   background-color: var(--button-bg-color);
@@ -157,9 +160,13 @@ img {
 .desc-list {
   display: flex;
   margin: 0 auto;
+  justify-content: space-between;
   padding-left: 0;
-  padding-bottom: 0;
   gap: 30px;
+}
+.desc-list > li {
+  width: 270px;
+  margin: 0 auto;
 }
 .title-desc {
   /* czcionka */
