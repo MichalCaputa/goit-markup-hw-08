@@ -392,11 +392,7 @@ button {
   justify-content: center;
   fill: var(--social);
 }
-.media-icons:hover,
-.media-icons:focus {
-  fill: var(--white-color);
-  background: var(--blue);
-}
+
 .socialmedia-link {
   display: flex;
   width: 44px;
@@ -405,7 +401,8 @@ button {
   padding: 12px;
 }
 .socialmedia-link:hover,
-.socialmedia-link:focus {
+.socialmedia-link:focus,
+.socialmedia-link:active {
   fill: var(--white-color);
   background: var(--blue);
 }
