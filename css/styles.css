@@ -403,7 +403,7 @@ button {
 .socialmedia-link:hover,
 .socialmedia-link:focus,
 .socialmedia-link:active {
-  fill: var(--white-color);
+  color: var(--white-color);
   background: var(--blue);
 }
 .social-icons {
