@@ -409,7 +409,11 @@ button {
   border-radius: 50%;
   padding: 12px;
 }
-
+.socialmedia-link:hover,
+.socialmedia-link:focus {
+  fill: var(--white-color);
+  background: var(--blue);
+}
 .social-icons {
   list-style: none;
   display: flex;
@@ -418,11 +422,7 @@ button {
   fill: var(--social);
   justify-content: space-around;
 }
-.social-icons:hover,
-.social-icons:focus {
-  fill: var(--white-color);
-  background: var(--blue);
-}
+
 .clients-title {
   font-weight: 700;
   font-size: 36px;
