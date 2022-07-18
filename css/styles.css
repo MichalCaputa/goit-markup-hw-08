@@ -374,6 +374,14 @@ button {
   padding-right: 10px;
   fill: var(--grey-color);
 }
+.email:hover,
+.email:focus {
+  fill: var(--blue-color);
+}
+.smartphone:hover,
+.smartphone:focus {
+  fill: var(--blue-color);
+}
 .smartphone {
   padding-right: 10px;
   fill: var(--grey-color);
@@ -390,7 +398,6 @@ button {
 .media-icons {
   align-items: center;
   justify-content: center;
-  fill: var(--social);
 }
 
 .socialmedia-link {
@@ -399,11 +406,12 @@ button {
   height: 44px;
   border-radius: 50%;
   padding: 12px;
+  fill: var(--social);
 }
 .socialmedia-link:hover,
 .socialmedia-link:focus,
 .socialmedia-link:active {
-  color: var(--white-color);
+  fill: var(--white-color);
   background: var(--blue);
 }
 .social-icons {
