@@ -19,30 +19,39 @@
     <!-- naglowek strony-->
     <header class="head-container">
       <div class=" head-container-additional container">
-      <div class="header-div ">
+      <div>
         <p>
           <a href="index.html">
             <p class="logo-first">Web<span class="logo-sec">Studio</span></p></a
           >
         </p>
+
       </div>
       <nav class="navigation">
         <!-- nawigacja -->
         <ul class="nav-list">
         <li><a class="navi-button" href="index.html">Agencja</a></li>
         <li><a class="navi-button" href="portfolio.html" target="_self"
-          >Portfolio</a>
-        </li>       
+          >Portfolio</a></li>
+        
         <li><a class="navi-button" href="#Kontakt">Kontakt</a></li>
       </ul>
       </nav>
       <div>
         <ul class="contact-list">
-        <li><a class="contact-us" href="mailto:info@studio.com"> info@studio.com</a></li>
-        <li><a class="contact-us" href="call:+48111111111">+48 111 111 111</a></li>
+          <li><svg class="email" width="16" height="12">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        <a class="contact-us" href="mailto:info@studio.com"> info@studio.com</a></li>
+         
+        <li><svg class="smartphone" width="10"
+        height="16">
+        <use href="./images/icons.svg#icon-smartphone"></use>
+      </svg>
+        <a class="contact-us" href="call:+48111111111">+48 111 111 111</a></li>
       </ul>
       </div></div>
-    </header>   
+    </header>
     <!--main-->
     <main>
 <div class="container section">
@@ -186,24 +195,60 @@
     </main>
     <footer class="footer-info">
       <div class="footer-container container">
+      <section>
+
     <h3 class="logo-first footer-text">
         <a href="index.html">
           <p>
             Web<span class="logo-third">Studio</span>
-          </p>
-          </a>
-      </h3>      
+          </p></a
+        >
+      </h3>
+      
       <address class="street">m. Warszawa, Aleje Jerozolimskie 21</address>
       <ul class="contact-us-footer">
-        <li>
-          <a class="contact-us" href="mailto:info@example.com"
-        >info@example.com</a>
-      </li>
-      <li>
-        <a class="contact-us" href="tel:+48111111111">+48 111 111 111</a>
-      </li>
+        <li><a class="contact-us" href="mailto:info@example.com"
+        >info@example.com</a</li>
+      
+      <li><a class="contact-us" href="tel:+48111111111">+48 111 111 111</a></li>
     </ul>
-  </div>
+ </section>
+    <section class="footer-socialmedia">
+      <p class="footer-socialmedia-header">dołącz do nas</p>
+      <div>
+          <ul class="footer-socialmedia-items">
+              <li class="footer-socialmedia-item">
+                  <svg width="20" height="20">
+                      <use
+                          href="images/icons.svg#icon-instagram"
+                      ></use>
+                  </svg>
+              </li>
+              <li class="footer-socialmedia-item">
+                  <svg width="20" height="20">
+                      <use
+                          href="images/icons.svg#icon-twitter"
+                      ></use>
+                  </svg>
+              </li>
+              <li class="footer-socialmedia-item">
+                  <svg width="20" height="20">
+                      <use
+                          href="images/icons.svg#icon-facebook"
+                      ></use>
+                  </svg>
+              </li>
+              <li class="footer-socialmedia-item">
+                  <svg width="20" height="20">
+                      <use
+                          href="images/icons.svg#icon-linkedin2"
+                      ></use>
+                  </svg>
+              </li>
+          </ul>
+      </div>
+  </section>
+</div>
     </footer>
   </body>
 </html>
