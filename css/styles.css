@@ -204,11 +204,9 @@ font-family: 'Roboto', sans-serif;
 .text-main {
   text-align: center;
   font-family: "Roboto";
-  font-style: Black;
   font-size: 44px;
   line-height: 116%;
   vertical-align: Top;
-  letter-spacing: 6%;
   padding-top: 200px;
   padding-bottom: 30px;
   width: 696px;
@@ -216,11 +214,9 @@ font-family: 'Roboto', sans-serif;
 .text-main-button {
   text-align: center;
   font-family: "Roboto";
-  font-style: bold;
   font-size: 16px;
   line-height: 160%;
   vertical-align: center;
-  letter-spacing: 6%;
 }
 /* about-us */
 .about-us-items {
@@ -424,6 +420,11 @@ button {
   padding-left: 0px;
   fill: var(--social);
   justify-content: space-around;
+}
+.social-icons:hover li,
+.social-icons:focus li {
+  fill: var(--white-color);
+  background: var(--blue);
 }
 
 .clients-title {
