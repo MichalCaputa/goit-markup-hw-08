@@ -417,12 +417,6 @@ button {
   fill: var(--social);
   justify-content: space-around;
 }
-.social-icons:hover li,
-.social-icons:focus li {
-  fill: var(--white-color);
-  background: var(--blue);
-}
-
 .clients-title {
   font-weight: 700;
   font-size: 36px;
