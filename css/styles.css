@@ -411,7 +411,7 @@ button {
 .socialmedia-link:focus,
 .socialmedia-link:active {
   fill: var(--white-color);
-  background: var(--blue);
+  background-color: var(--blue);
 }
 .social-icons {
   list-style: none;
