@@ -105,9 +105,7 @@ img {
   display: block;
 }
 /* main  - EFEKTY*/
-.button-main {
-  /* chyba niepotrzebne */
-}
+
 .main-container {
   background-color: var(--bg-color);
   color: var(--white-color);
@@ -308,8 +306,6 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-}
-.product > figure {
 }
 h1 {
   margin: 0 auto;
