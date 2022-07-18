@@ -382,21 +382,16 @@ button {
   margin-bottom: 30px;
 }
 .media-icons {
-  width: 44px;
-  height: 44px;
   align-items: center;
   justify-content: center;
-  display: flex;
-  margin-right: 30px;
   fill: var(--social);
 }
 .socialmedia-link {
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   padding: 12px;
-  display: block;
-  background: rgba(255, 255, 255, 0.1);
 }
 .socialmedia-link:hover,
 .socialmedia-link:focus {
