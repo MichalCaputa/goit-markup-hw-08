@@ -15,6 +15,8 @@ body {
   --button-bg-color: #2196f3;
   --desc-color: #757575;
   --workers-bgcolor: #f5f4fa;
+  --blue: #2196f3;
+  --social: #afb1b8;
 }
 /* logo */
 .logo-first > a {
@@ -109,6 +111,11 @@ img {
 .main-container {
   background-color: var(--bg-color);
   color: var(--white-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/people.jpg);
 
   text-align: center;
 }
@@ -345,4 +352,32 @@ h1 {
 }
 button {
   font-family: "Roboto", sans-serif;
+}
+/* ZAD4 */
+.icons {
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+}
+.socialmedia-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+}
+.socialmedia-link:hover,
+.socialmedia-link:focus {
+  fill: var(--white-color);
+  background: var(--blue);
+}
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding-left: 0px;
+  fill: var(--social);
+  justify-content: space-around;
 }
