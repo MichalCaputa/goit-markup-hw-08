@@ -308,6 +308,8 @@ img {
   width: 1200px;
   margin: 0 auto;
 }
+.product > figure {
+}
 h1 {
   margin: 0 auto;
 }
@@ -410,6 +412,11 @@ button {
   padding-left: 0px;
   fill: var(--social);
   justify-content: space-around;
+}
+.social-icons:hover,
+.social-icons:focus {
+  fill: var(--white-color);
+  background: var(--blue);
 }
 .clients-title {
   font-weight: 700;
