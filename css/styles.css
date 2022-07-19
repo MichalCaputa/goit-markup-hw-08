@@ -46,6 +46,14 @@ nav {
   border-color: #ececec;
   border-bottom: 1px solid #ececec;
 }
+.email-li-element {
+  display: flex;
+  align-items: center;
+}
+.smartphone-li-element {
+  display: flex;
+  align-items: center;
+}
 .head-container-additional {
   display: flex;
   margin: 0 auto;
