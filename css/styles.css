@@ -126,17 +126,14 @@ img {
   text-align: center;
 }
 .container-height {
-  height: 600px;
+  padding-bottom: 200px;
 }
 .button-color {
   background-color: var(--button-bg-color);
   color: var(--white-color);
   border: var(--bg-color);
-  padding: 10px 41px 10px 42px;
+  padding: 14px 48px 14px 48px;
   border-radius: 4px;
-  margin: 0 auto;
-  width: 200px;
-  height: 50px;
 }
 .button-color:hover {
   background-color: var(--button-bg-color);
@@ -179,10 +176,7 @@ img {
   padding-left: 0;
   gap: 35px;
 }
-.desc-list > li {
-  width: 270px;
-  margin: 0 auto;
-}
+
 .title-desc {
   /* czcionka */
   /* 
@@ -215,7 +209,6 @@ font-family: 'Roboto', sans-serif;
   vertical-align: Top;
   padding-top: 200px;
   padding-bottom: 30px;
-  width: 696px;
 }
 .text-main-button {
   text-align: center;
@@ -252,8 +245,6 @@ font-family: 'Roboto', sans-serif;
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 figure {
-  height: 428px;
-  width: 270px;
   margin: 0 auto;
 }
 .workers {
@@ -307,7 +298,7 @@ img {
 .street {
   color: var(--white-color);
   font-size: 14px;
-  width: 252px;
+
   font-size: 14px;
 }
 /* ZAD 3*/
@@ -359,8 +350,7 @@ h1 {
 }
 .product {
   border: 1px solid #eeeeee;
-  width: 370px;
-  height: 404px;
+
   margin: 0 auto;
 }
 button {
@@ -369,8 +359,7 @@ button {
 /* ZAD4 */
 .desc-icons {
   display: flex;
-  width: 270px;
-  height: 120px;
+
   background: var(--team-bg);
   justify-content: center;
   align-items: center;
@@ -401,7 +390,6 @@ button {
   justify-content: center;
   width: 270px;
   height: 120px;
-  margin-bottom: 30px;
 }
 .media-icons {
   align-items: center;
