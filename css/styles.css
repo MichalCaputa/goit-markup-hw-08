@@ -373,11 +373,11 @@ button {
 }
 .email:hover,
 .email:focus {
-  fill: var(--blue-color);
+  fill: var(--blue);
 }
 .smartphone:hover,
 .smartphone:focus {
-  fill: var(--blue-color);
+  fill: var(--blue);
 }
 .smartphone {
   padding-right: 10px;
@@ -416,6 +416,7 @@ button {
   padding-left: 0px;
   fill: var(--social);
   justify-content: space-around;
+  padding-bottom: 30px;
 }
 .clients-title {
   font-weight: 700;
