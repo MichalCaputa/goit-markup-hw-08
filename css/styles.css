@@ -46,14 +46,16 @@ nav {
   border-color: #ececec;
   border-bottom: 1px solid #ececec;
 }
-.email-li-element {
+.contact-li-element {
   display: flex;
   align-items: center;
+  fill: var(--grey-color);
 }
-.smartphone-li-element {
-  display: flex;
-  align-items: center;
+.contact-li-element:hover,
+.contact-li-element:focus {
+  fill: var(--blue);
 }
+
 .head-container-additional {
   display: flex;
   margin: 0 auto;
@@ -76,11 +78,10 @@ nav {
   font-weight: 500;
   font-size: 14px;
 }
-.contact-us:hover {
-  color: var(--select-bgcolor);
-}
+.contact-us:hover,
 .contact-us:focus {
   color: var(--select-bgcolor);
+  fill: var(--blue);
 }
 /* navi buttons */
 .navi-button {
@@ -174,7 +175,6 @@ img {
   display: flex;
   margin: 0 auto;
   padding-left: 0;
-  gap: 35px;
 }
 
 .title-desc {
@@ -359,37 +359,19 @@ button {
 /* ZAD4 */
 .desc-icons {
   display: flex;
-
-  background: var(--team-bg);
   justify-content: center;
   align-items: center;
   border-radius: 4px;
 }
 .email {
-  width: 26px;
-  height: 12px;
-  padding-right: 10px;
-  fill: var(--grey-color);
-}
-.email:hover,
-.email:focus {
-  fill: var(--blue);
-}
-.smartphone:hover,
-.smartphone:focus {
-  fill: var(--blue);
+  margin-right: 5px;
 }
 .smartphone {
-  padding-right: 10px;
-  fill: var(--grey-color);
-  width: 20px;
-  height: 16px;
+  margin-right: 5px;
 }
 .icons {
   display: flex;
   justify-content: center;
-  width: 270px;
-  height: 120px;
 }
 .media-icons {
   align-items: center;
