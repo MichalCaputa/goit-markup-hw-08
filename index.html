@@ -69,7 +69,13 @@
    
         <h1 class="text-main">Efektywne rozwiazania dla waszego biznesu</h1>
         <div class="button-main">
-          <button type="button" class="button-color text-main-button">zamow usluge</button>
+          <button type="button" class="button-color text-main-button" data-modal-open>zamow usluge</button>
+          <div class="modal-backdrop is-hidden" data-modal>
+            <section class="modal-content">
+              <button class="modal-exit" data-modal-close>X</button>
+            </section>
+          </div>
+        </div>
       </div>
     </div>
 </div>
