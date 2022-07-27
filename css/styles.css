@@ -55,7 +55,7 @@ nav {
 }
 .contact-container {
   display: flex;
-  align-items: right;
+  align-items: center;
 }
 .head-container {
   background-color: var(--head-background);
@@ -78,6 +78,7 @@ nav {
 .head-container-additional {
   display: flex;
   margin: 0 auto;
+  justify-content: space-between;
 }
 .nav-list {
   display: flex;
@@ -93,7 +94,7 @@ nav {
 }
 .contact-us {
   color: var(--grey-color);
-
+  display: flex;
   font-weight: 500;
   font-size: 14px;
 }
