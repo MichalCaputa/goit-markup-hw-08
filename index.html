@@ -73,6 +73,54 @@
           <div class="modal-backdrop is-hidden" data-modal>
             <section class="modal-content">
               <button class="modal-exit" data-modal-close>X</button>
+
+              <h2 class="modal-form-title">Zostaw swoje dane w formularzu poniżej</h2>
+              <form name="signup_form" autocomplete="on">
+                <label>
+                  <p class="modal-form-text">Imię</p>
+                  <input type="text" name="name" class="modal-form-box">
+                  <svg class="modal-icon-name">
+                <use xlink:href="images/icons.svg#icon-icon_person"></use>
+              </svg>
+                </label>
+
+                <label>
+                  <p class="modal-form-text">Telefon</p>
+                  <input type="tel" name="phone_number" class="modal-form-box">
+                  <svg class="modal-icon-phone">
+                <use xlink:href="images/icons.svg#icon-icon_tel"></use>
+              </svg>
+                </label>
+                
+                <label>
+                  <p class="modal-form-text">E-mail</p>
+                  <input type="email" name="email" class="modal-form-box">
+                  <svg class="modal-icon-mail">
+                <use xlink:href="images/icons.svg#icon-icon_mail"></use>
+              </svg>
+                </label>
+
+                <label>
+                  <p class="modal-form-text">Komentarz</p>
+                  <textarea name="feedback" rows="6" placeholder="Wprowadź tekst"></textarea>
+                </label>
+
+                <label class="modal-checkbox">
+                  <p class="modal-checkbox-text">Oświadczam iż akceptuję <a href class="modal-checkbox-link">Regulamin</a> i <a href class="modal-checkbox-link">Politykę Prywatności</a>.</p>
+                  <input type="checkbox" name="statute" value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."/>
+                  
+                  <span class="checkmark">
+                    <svg class="modal-checkbox-icon">
+                      <use xlink:href="images/icons.svg#icon-icon_check"></use>
+                    </svg>
+                  </span>
+                </label>
+                <div class="modal-button-position">
+                <button type="submit" class="modal-form-button">Wyślij</button>
+                </div>
+              </form>
+            </div>
+            
             </section>
           </div>
         </div>
@@ -384,6 +432,17 @@
                 </li>
             </ul>
         </div>
+    </section>
+    <section class="footer-title-newsletter">
+      <h4>Zapisz się do newslettera</h4>
+      <form name="signup_form" autocomplete="on" novalidate class="news-form">
+        <label>
+        <input type="email" name="E-mail" placeholder="E-mail" class="newsletter" />
+        </label>
+        <button type="submit" class="button-newsletter">
+          <span class="button-newsletter-text">Zapisz się</span>
+          <svg class="icon-send">
+            <use xlink:href="images/icons.svg#icon-icon_send"></use></svg></button>
     </section>
   </div>
       </footer>
