@@ -209,9 +209,11 @@ img {
 .desc-list {
   display: flex;
   margin: 0 auto;
-  padding-left: 0;
+  padding: 0;
 }
-
+.desc-item {
+  width: 310px;
+}
 .title-desc {
   /* czcionka */
   /* 
@@ -293,8 +295,7 @@ font-family: 'Roboto', sans-serif;
 }
 .workers-list {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-between;
   padding: 0;
 }
 .workers-bground {
@@ -472,7 +473,7 @@ button {
 }
 .icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .media-icons {
   align-items: center;
