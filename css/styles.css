@@ -719,7 +719,7 @@ h4 {
   height: 40px;
   position: relative;
   padding-top: 3px;
-  padding-left: 16px;
+  padding-left: 38px;
 }
 .modal-form-text {
   font-size: 12px;
@@ -734,27 +734,21 @@ h4 {
 }
 .modal-icon-name {
   fill: #212121;
-  height: 12px;
-  width: 12px;
   position: absolute;
   top: 108px;
-  left: 60px;
+  left: 53px;
 }
 .modal-icon-phone {
   fill: #212121;
-  height: 13px;
-  width: 13px;
   position: absolute;
-  top: 175px;
-  left: 60px;
+  top: 202px;
+  left: 53px;
 }
 .modal-icon-mail {
   fill: #212121;
-  height: 12px;
-  width: 15px;
   position: absolute;
-  top: 243px;
-  left: 60px;
+  top: 294px;
+  left: 53px;
 }
 .modal-checkbox {
   display: block;
@@ -822,7 +816,7 @@ input:focus + .modal-icon-phone,
 input:focus + .modal-icon-mail,
 textarea,
 input {
-  fill: var(--blue-color);
+  fill: var(--blue);
   outline-color: var(--blue);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
