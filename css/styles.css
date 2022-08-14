@@ -498,10 +498,9 @@ button {
 .social-icons {
   list-style: none;
   display: flex;
-  gap: 10px;
   padding-left: 0px;
   fill: var(--social);
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-bottom: 30px;
 }
 .clients-title {
