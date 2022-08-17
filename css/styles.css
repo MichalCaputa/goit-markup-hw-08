@@ -116,7 +116,7 @@ body {
   gap: 5px;
 }
 .contact-container__link:hover,
-.contact-container__:focus {
+.contact-container__link:focus {
   color: var(--select-bgcolor);
   fill: var(--blue);
   cursor: pointer;
@@ -202,32 +202,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-portfolio {
-  background-color: #f5f4fa;
-  color: var(--black-color);
-  cursor: pointer;
-  border: var(--white-color);
-  font-weight: 500;
-  font-size: 16px;
-  font-style: normal;
-  padding: 6px 22px 6px 22px;
-  border-radius: 4px;
-  line-height: 1.2;
-}
-
-.button-portfolio:hover {
-  background-color: var(--button-bg-color);
-  color: var(--white-color);
-  cursor: pointer;
-  border: none;
-  border: 0px solid black;
-  border-radius: 4px 4px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: background 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 /* description */
 .desc {
   padding-top: 94px;
@@ -448,15 +422,6 @@ img {
   display: inline-block;
   padding: 0;
 }
-.invitation {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-color);
-  padding-bottom: 20px;
-}
 .socialmedia {
   list-style: none;
   display: flex;
@@ -467,12 +432,12 @@ img {
 .socialmedia-footer-div {
   display: inline;
 }
-.footer-socialmedia {
+.f-scmedia {
   padding-left: 70px;
   padding-top: 12px;
 }
 
-.footer-socialmedia-header {
+.f-scmedia__header {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -482,7 +447,7 @@ img {
   margin: 0;
 }
 
-.footer-socialmedia-items {
+.f-scmedia__list {
   display: flex;
   padding-top: 20px;
   gap: 10px;
@@ -490,7 +455,7 @@ img {
   margin: 0 auto;
 }
 
-.footer-socialmedia-item {
+.f-scmedia__item {
   width: 40px;
   height: 40px;
   display: inline-flex;
@@ -502,8 +467,8 @@ img {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-socialmedia-item:hover,
-.footer-socialmedia-item:focus {
+.f-scmedia__item:hover,
+.f-scmedia__item:focus {
   background: var(--select-bgcolor);
   cursor: pointer;
   cursor: pointer;
@@ -511,16 +476,107 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* nazwa do zmiany */
-.technocrack {
+.footer-blk__link {
+  color: var(--grey-color);
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  align-items: center;
+  gap: 5px;
+}
+.footer-blk__link:hover,
+.footer-blk__link:focus {
+  color: var(--select-bgcolor);
+  fill: var(--blue);
+  cursor: pointer;
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.news {
+  padding-left: 78px;
+  padding-top: 12px;
+}
+.newsletter {
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2f303a;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  padding-left: 16px;
+  color: var(--white-color);
+}
+.news__btn {
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+}
+.news__btn:hover {
+  transform: scale(1.1);
+}
+.news__form {
+  display: flex;
+  gap: 30px;
+}
+/*portyfolio */
+.techno {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.techno__list {
   display: flex;
   flex-wrap: wrap;
   gap: 39px;
   padding-left: 0;
   margin: 0 auto;
 }
-.product:hover,
-.product:focus {
+.techno__btn {
+  background-color: #f5f4fa;
+  color: var(--black-color);
+  cursor: pointer;
+  border: var(--white-color);
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  padding: 6px 22px 6px 22px;
+  border-radius: 4px;
+  line-height: 1.2;
+}
+
+.techno__btn:hover {
+  background-color: var(--button-bg-color);
+  color: var(--white-color);
+  cursor: pointer;
+  border: none;
+  border: 0px solid black;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.techno__product:hover,
+.techno__product:focus {
   background-color: var(--white-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -530,7 +586,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buttons-portfolio {
+.techno__list-btn {
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -545,7 +601,27 @@ img {
   margin: 0 auto;
   padding-left: 0;
 }
-.portfolio-overlay {
+
+.techno__product:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.techno__product:hover .techno__overlay {
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(0);
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.techno__product {
+  border: 1px solid #eeeeee;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.techno__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -555,32 +631,13 @@ img {
   padding-top: 49px;
   padding-left: 24px;
 }
-.product:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.product:hover .portfolio-overlay {
-  background: rgba(33, 150, 243, 0.9);
-  transform: translateY(0);
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-overlay-text {
+.techno__overlay-text {
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
-.product {
-  border: 1px solid #eeeeee;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-}
-.portfolio-card-desc {
+.techno__card-desc {
   border-bottom: 1px solid var(--border);
   border-left: 1px solid var(--border);
   border-right: 1px solid var(--border);
@@ -592,7 +649,6 @@ img {
 button {
   font-family: "Roboto", sans-serif;
 }
-/* ZAD4 */
 
 /* MODAL */
 .modal-backdrop {
@@ -648,10 +704,7 @@ button {
   pointer-events: none;
 }
 /* 6 */
-.news-form {
-  display: flex;
-  gap: 30px;
-}
+
 h4 {
   font-family: Roboto;
   font-weight: 700;
@@ -660,45 +713,6 @@ h4 {
   color: var(--white-color);
   margin: 0 auto;
   margin-bottom: 12px;
-}
-.footer-title-newsletter {
-  padding-left: 78px;
-  padding-top: 12px;
-}
-.newsletter {
-  height: 50px;
-  width: 358px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  background-color: #2f303a;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  padding-left: 16px;
-  color: var(--white-color);
-}
-.button-newsletter {
-  height: 50px;
-  width: 200px;
-  border: none;
-  border-radius: 4px;
-  background-color: var(--blue);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  color: var(--white-color);
-  cursor: pointer;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transform;
-}
-.button-newsletter:hover {
-  transform: scale(1.1);
 }
 .modal-form-title {
   font-size: 20px;
@@ -860,7 +874,6 @@ textarea::placeholder {
 .modal-form-button:hover {
   transform: scale(1.1);
 }
-
 .modal-button-position {
   display: flex;
   justify-content: center;
