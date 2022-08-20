@@ -51,6 +51,9 @@ ul {
 img {
   display: block;
 }
+button {
+  font-family: $roboto;
+}
 @import "./components/logo.scss";
 @import "./components/page-header.scss";
 @import "./utils/variables";
