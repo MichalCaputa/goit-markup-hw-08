@@ -1,5 +1,64 @@
-@import "./utils/variables.scss";
-@import "./components/page-footer";
-@import "./components/page-header";
+$black-color: #212121;
+$logofirst-color: #2196f3;
+$logosec-color: #000000;
+$head-background: #ffffff;
+$grey-color: #757575;
+$select-bgcolor: #2196f3;
+$bg-color: #2f303a;
+$white-color: #ffffff;
+$button-bg-color: #2196f3;
+$desc-color: #757575;
+$workers-bgcolor: #f5f4fa;
+$-blue: #2196f3;
+$border: #eeeeee;
+$social: #afb1b8;
+$roboto: "Roboto", sans-serif;
+body {
+  color: $black-color;
+  font-family: $roboto;
+  margin: 0 auto;
+}
+h1 {
+  margin: 0 auto;
+}
+img {
+  align-self: flex-start;
+}
+figure {
+  margin: 0 auto;
+}
+h3 {
+  margin: 0 auto;
+}
+h4 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $white-color;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+a {
+  text-decoration: none;
+}
+/* ul li */
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+img {
+  display: block;
+}
 @import "./components/logo.scss";
-@import "./components/logo-footer.scss";
+@import "./components/page-header.scss";
+@import "./utils/variables";
+@import "./components/page-footer.scss";
+@import "./components/business";
+@import "./components/modal";
+@import "./components/desc";
+@import "./components/about";
+@import "./components/workers";
+@import "./components/clients";
+@import "./components/techno";

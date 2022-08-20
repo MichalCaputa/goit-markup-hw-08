@@ -1,0 +1,46 @@
+.business {
+  color: $white-color;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/people.jpg);
+  text-align: center;
+  padding-bottom: 200px;
+  &--width {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  &__text {
+    text-align: center;
+    font-family: $roboto;
+    font-size: 44px;
+    line-height: 116%;
+    vertical-align: Top;
+    padding-top: 200px;
+    padding-bottom: 30px;
+  }
+  &__btn-text {
+    text-align: center;
+    font-family: $roboto;
+    font-size: 16px;
+    line-height: 160%;
+    vertical-align: center;
+    &--color {
+      background-color: $button-bg-color;
+      color: $white-color;
+      border: $bg-color;
+      padding: 14px 48px 14px 48px;
+      border-radius: 4px;
+      &:hover,
+      &:focus {
+        background-color: $button-bg-color;
+        color: $white-color;
+        border: $bg-color;
+        cursor: pointer;
+        transition: color 250ms, background 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  }
+}

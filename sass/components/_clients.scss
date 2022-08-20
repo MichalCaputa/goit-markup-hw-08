@@ -1,0 +1,36 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 1200px;
+  margin: 0 auto;
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  &__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    fill: $social;
+    &:hover,
+    &:focus {
+      fill: $-blue;
+      border-color: $-blue;
+      cursor: pointer;
+      cursor: pointer;
+      transition: background 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

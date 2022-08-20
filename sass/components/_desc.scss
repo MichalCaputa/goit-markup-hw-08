@@ -1,0 +1,47 @@
+.desc {
+  padding-top: 94px;
+  display: flex;
+  padding-bottom: 0;
+  justify-content: space-between;
+  &--width {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  &__list {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    gap: 30px;
+  }
+  &__item {
+    width: 277px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 0.03em;
+  }
+  &__text {
+    color: $desc-color;
+    font-family: $roboto;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: Left;
+    vertical-align: Top;
+    letter-spacing: 0.02em;
+  }
+  &_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
