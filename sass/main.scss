@@ -54,6 +54,10 @@ img {
 button {
   font-family: $roboto;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 @import "./components/logo.scss";
 @import "./components/page-header.scss";
 @import "./utils/variables";

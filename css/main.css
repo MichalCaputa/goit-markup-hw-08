@@ -49,6 +49,11 @@ button {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .logo__first-word > a {
   color: #2196f3;
   font-family: "Raleway", sans-serif;
@@ -77,8 +82,6 @@ button {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .navigation {
@@ -148,10 +151,6 @@ button {
 .footer-blk {
   background-color: #2f303a;
   padding: 60px 0;
-}
-.footer-blk--width {
-  width: 1200px;
-  margin: 0 auto;
 }
 .footer-blk__1div {
   margin: 0 auto;
@@ -275,10 +274,6 @@ button {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/people.jpg);
   text-align: center;
   padding-bottom: 200px;
-}
-.business--width {
-  width: 1200px;
-  margin: 0 auto;
 }
 .business__text {
   text-align: center;
@@ -565,10 +560,6 @@ textarea::placeholder {
   padding-bottom: 0;
   justify-content: space-between;
 }
-.desc--width {
-  width: 1200px;
-  margin: 0 auto;
-}
 .desc__list {
   display: flex;
   margin: 0 auto;
@@ -610,8 +601,6 @@ textarea::placeholder {
 .about {
   padding-top: 94px;
   padding-bottom: 94px;
-  width: 1200px;
-  margin: 0 auto;
 }
 .about__header {
   font-weight: 700;
@@ -654,10 +643,6 @@ textarea::placeholder {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.workers--width {
-  width: 1200px;
-  margin: 0 auto;
 }
 .workers__title {
   font-weight: 700;
@@ -714,8 +699,6 @@ textarea::placeholder {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
-  width: 1200px;
-  margin: 0 auto;
 }
 .clients__title {
   font-weight: 700;
@@ -747,8 +730,6 @@ textarea::placeholder {
 }
 
 .techno {
-  width: 1200px;
-  margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 94px;
 }
