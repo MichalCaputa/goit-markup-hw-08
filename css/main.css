@@ -103,13 +103,22 @@ button {
   .contact-container {
     display: none;
   }
+  .container {
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 15px;
+    align-items: center;
+    max-width: 480px;
+  }
   .header-container__additional {
     display: flex;
     justify-content: space-between;
-    padding-left: 10px;
   }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
   .container {
-    width: auto;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -454,7 +463,10 @@ button {
     color: #ffffff;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/people.jpg);
     text-align: center;
-    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding-bottom: 50px;
   }
   .business__text {
     text-align: center;
@@ -462,8 +474,8 @@ button {
     font-size: 33px;
     line-height: 116%;
     vertical-align: Top;
-    padding-top: 100px;
-    padding-bottom: 30px;
+    padding-top: 70px;
+    padding-bottom: 50px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -531,32 +543,39 @@ button {
 }
 .modal-backdrop {
   position: fixed;
+  display: flex;
   top: 0;
+  bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
-  z-index: 1000;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms, visibility 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  height: 670px;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  max-width: 450px;
+  min-height: 609px;
+  position: relative;
+  cursor: initial;
+  margin: auto;
+  z-index: 2;
+  background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
+  cursor: pointer;
 }
 
 .modal-exit {
   position: absolute;
   top: 8px;
-  right: 8px;
+  right: 17px;
   width: 30px;
   height: 30px;
   background-color: #ffffff;
@@ -581,18 +600,17 @@ button {
 }
 
 .modal-form-title {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 23px;
-  letter-spacing: 0.03em;
   text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
   color: #212121;
-  padding-bottom: 2px;
-  padding-top: 2px;
+  margin-bottom: 12px;
 }
 
 .modal-form-box {
-  width: 448px;
+  min-width: 320px;
+  max-width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
@@ -608,7 +626,6 @@ button {
   letter-spacing: 0.01em;
   text-align: left;
   color: #757575;
-  padding-left: 40px;
   padding-bottom: 4px;
   padding-top: 10px;
 }
@@ -616,22 +633,28 @@ button {
 .modal-icon-name {
   fill: #212121;
   position: absolute;
-  top: 108px;
-  left: 53px;
+  top: 67px;
+  left: 10px;
+  height: 18px;
+  width: 18px;
 }
 
 .modal-icon-phone {
   fill: #212121;
   position: absolute;
-  top: 202px;
-  left: 53px;
+  top: 67px;
+  left: 10px;
+  height: 18px;
+  width: 18px;
 }
 
 .modal-icon-mail {
   fill: #212121;
   position: absolute;
-  top: 294px;
-  left: 53px;
+  top: 67px;
+  left: 10px;
+  height: 18px;
+  width: 18px;
 }
 
 .modal-checkbox {
@@ -655,12 +678,12 @@ button {
 
 .checkmark {
   height: 15px;
-  width: 16px;
+  width: 15px;
   background-color: #ffffff;
-  border: 2px solid black;
+  border: 1px solid black;
   position: absolute;
-  top: 3px;
-  left: 40px;
+  top: 17px;
+  left: 7px;
   cursor: pointer;
   border-radius: 2px;
 }
@@ -688,8 +711,8 @@ button {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-top: 25px;
   cursor: default;
+  margin-left: 22px;
 }
 
 .modal-checkbox-link {
@@ -731,13 +754,18 @@ input {
 }
 
 textarea {
-  width: 448px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding: 12px 16px;
+  width: 100%;
   height: 120px;
   resize: none;
-  padding-top: 12px;
-  padding-left: 16px;
+  transition: border 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 textarea::-moz-placeholder {
@@ -774,6 +802,28 @@ textarea::placeholder {
 .modal-button-position {
   display: flex;
   justify-content: center;
+}
+
+.form__set {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 10px;
+  gap: 4px;
+}
+
+.modal-policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -1256,7 +1306,7 @@ textarea::placeholder {
   justify-content: center;
   margin: 0;
   padding: 0;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
   border: none;
   border-radius: 50%;
@@ -1268,20 +1318,25 @@ textarea::placeholder {
     display: none;
   }
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+.menu-toggle:hover, .menu-toggle:focus {
+  color: #2196f3;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: grey;
+  background-color: #fff;
   z-index: 999;
+  padding: 48px 40px;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -1298,9 +1353,17 @@ textarea::placeholder {
 }
 
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   list-style: none;
+  gap: 36px;
+  flex-grow: 0.5;
+  text-align: left;
+}
+.mobile-menu__li {
+  text-align: left;
 }
 
 .mobile-menu .link {
@@ -1308,4 +1371,107 @@ textarea::placeholder {
   padding: 10px;
   color: #fff;
   text-decoration: none;
+}
+
+.mobile-menu__button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mobile-menu__button:hover, .mobile-menu__button:focus {
+  color: #2196f3;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-contact {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mobile-menu-contact__item:first-child {
+  margin-bottom: 32px;
+}
+.mobile-menu-contact__tel {
+  color: #2196f3;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7.1428571429vw;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+.mobile-menu-contact__mail {
+  color: #757575;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 5vw;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+
+.mobile-menu-social {
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+.mobile-menu-social__link {
+  font-size: 3.8461538462vw;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.23;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-menu-social--line1:after {
+  content: "";
+  background-color: rgba(33, 33, 33, 0.2);
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 0px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  left: 27%;
+  transform: translatex(-50%);
+  display: block;
+}
+
+.mobile-menu-social--line2:after {
+  content: "";
+  background-color: rgba(33, 33, 33, 0.2);
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 0px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  left: 50%;
+  transform: translatex(-50%);
+  display: block;
+}
+
+.mobile-menu-social--line3:after {
+  content: "";
+  background-color: rgba(33, 33, 33, 0.2);
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 0px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  left: 78%;
+  transform: translatex(-50%);
+  display: block;
 }/*# sourceMappingURL=main.css.map */
