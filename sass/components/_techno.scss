@@ -1,119 +1,128 @@
-.techno {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 39px;
-    padding-left: 0;
-    margin: 0 auto;
-  }
-  &__list-btn {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-    border-radius: 4px;
+// smartphone
+@media screen and (max-width: $pad) {
+}
+// TABLET
+@media screen and( min-width: $pad) and (max-width: $desktop) {
+}
 
-    padding-bottom: 34px;
-    margin: 0 auto;
-    padding-left: 0;
-  }
-  &__btn {
-    background-color: #f5f4fa;
-    color: $black-color;
-    cursor: pointer;
-    border: $white-color;
-    font-weight: 500;
-    font-size: 16px;
-    font-style: normal;
-    padding: 6px 22px 6px 22px;
-    border-radius: 4px;
-    line-height: 1.2;
-    &:hover {
-      background-color: $button-bg-color;
+@media screen and (min-width: $desktop) {
+  .techno {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 39px;
+      padding-left: 0;
+      margin: 0 auto;
+    }
+    &__list-btn {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      border-radius: 4px;
+
+      padding-bottom: 34px;
+      margin: 0 auto;
+      padding-left: 0;
+    }
+    &__btn {
+      background-color: #f5f4fa;
+      color: $black-color;
+      cursor: pointer;
+      border: $white-color;
+      font-weight: 500;
+      font-size: 16px;
+      font-style: normal;
+      padding: 6px 22px 6px 22px;
+      border-radius: 4px;
+      line-height: 1.2;
+      &:hover {
+        background-color: $button-bg-color;
+        color: $white-color;
+        cursor: pointer;
+        border: none;
+        border: 0px solid black;
+        border-radius: 4px 4px 4px 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+          0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: background 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+    &__product {
+      border: 1px solid #eeeeee;
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+      &:hover,
+      &:focus {
+        background-color: $white-color;
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+          0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: background 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+    &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateY(100%);
+      padding-top: 49px;
+      padding-left: 24px;
+    }
+    &__overlay-text {
+      font-size: 18px;
+      line-height: 1.55;
+      letter-spacing: 0.03em;
       color: $white-color;
-      cursor: pointer;
-      border: none;
-      border: 0px solid black;
-      border-radius: 4px 4px 4px 4px;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-      cursor: pointer;
-      transition: background 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-  }
-  &__product {
-    border: 1px solid #eeeeee;
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    &:hover,
-    &:focus {
+    &__card-desc {
+      border-bottom: 1px solid $border;
+      border-left: 1px solid $border;
+      border-right: 1px solid $border;
+      overflow: hidden;
+      position: relative;
+      height: 110px;
       background-color: $white-color;
-      border-radius: 0px 0px 4px 4px;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-      cursor: pointer;
-      transition: background 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__name {
+      color: $black-color;
+      font-weight: 700;
+      font-size: 18px;
+      text-align: left;
+      letter-spacing: 0.06em;
+      padding-left: 24px;
+    }
+    &__port {
+      color: $grey-color;
+      font-size: 16px;
+      letter-spacing: 0.03em;
+      text-align: left;
+      padding-left: 24px;
     }
   }
-  &__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    padding-top: 49px;
-    padding-left: 24px;
+  .techno__product:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__overlay-text {
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
-    color: $white-color;
+  .techno__product:hover .techno__overlay {
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(0);
+    transition: transform 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__card-desc {
-    border-bottom: 1px solid $border;
-    border-left: 1px solid $border;
-    border-right: 1px solid $border;
-    overflow: hidden;
-    position: relative;
-    height: 110px;
-    background-color: $white-color;
-  }
-  &__name {
-    color: $black-color;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: left;
-    letter-spacing: 0.06em;
-    padding-left: 24px;
-  }
-  &__port {
-    color: $grey-color;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    padding-left: 24px;
-  }
-}
-.techno__product:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.techno__product:hover .techno__overlay {
-  background: rgba(33, 150, 243, 0.9);
-  transform: translateY(0);
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

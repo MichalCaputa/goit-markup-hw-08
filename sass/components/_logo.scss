@@ -1,3 +1,28 @@
+@media screen and (max-width: $pad) {
+  .logo {
+    &__first-word > a {
+      color: $logofirst-color;
+      font-family: "Raleway", sans-serif;
+      font-size: 26px;
+    }
+    &__second-word {
+      color: $logosec-color;
+      &--footer {
+        color: $white-color;
+      }
+    }
+    &__footer-text > a > p {
+      padding-bottom: 20px;
+      margin: 0 auto;
+      display: flex;
+      padding: 0;
+      justify-content: center;
+    }
+    &__first-word--footer {
+      color: $white-color;
+    }
+  }
+}
 .logo {
   &__first-word > a {
     color: $logofirst-color;

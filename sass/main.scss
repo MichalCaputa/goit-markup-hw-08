@@ -13,6 +13,9 @@ $-blue: #2196f3;
 $border: #eeeeee;
 $social: #afb1b8;
 $roboto: "Roboto", sans-serif;
+$desktop: 1200px;
+$pad: 768px;
+$phone: 480px;
 body {
   color: $black-color;
   font-family: $roboto;
@@ -69,3 +72,4 @@ button {
 @import "./components/workers";
 @import "./components/clients";
 @import "./components/techno";
+@import "./components/modal-menu";
