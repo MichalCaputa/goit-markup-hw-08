@@ -1365,7 +1365,7 @@ textarea::placeholder {
   .techno__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 40px;
     max-width: 768px;
     padding-left: 0;
     margin: 0 auto;
