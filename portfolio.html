@@ -19,7 +19,7 @@
   <body>
     <!-- naglowek strony-->
     <header class="header-container">
-      <div class="header-container__additional container-width container">
+      <div class="header-container__additional container">
       <div class="logo">
         <p>
           <a href="index.html">
@@ -28,11 +28,80 @@
         </p>
 
       </div>
+      <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- MODAL-MENU  -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg
+              fill="black"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+    
+          <ul class="mobile-menu">
+          <li class="mobile-menu__li"><a class="mobile-menu__button" href="index.html">Agencja</a></li>
+          <li class="mobile-menu__li"><a class="mobile-menu__button" href="portfolio.html" target="_self">Portfolio</a></li>
+          <li class="mobile-menu__li"><a class="mobile-menu__button" href="#Kontakt">Kontakt</a></li>
+          </ul>
+          <ul class="mobile-menu-contact">
+            <li class="mobile-menu-contact__item">
+              <a class="mobile-menu-contact__tel" href="tel:+48111111111">+48 111 111 111</a>
+            </li>
+            <li class="mobile-menu-contact__item">
+              <a class="mobile-menu-contact__mail" href="mailto:+48111111111">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu-social">
+            <li class="mobile-menu-social__item mobile-menu-social--line1">
+              <a class="mobile-menu-social__link" href="">Instagram</a>
+            </li>
+            <li class="mobile-menu-social__item mobile-menu-social--line2">
+              <a class="mobile-menu-social__link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu-social__item mobile-menu-social--line3">
+              <a class="mobile-menu-social__link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu-social__item">
+              <a class="mobile-menu-social__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+    
+
+
       <nav class="navigation">
         <!-- nawigacja -->
         <ul class="navigation__list">
-        <li><a class="navigation__button " href="index.html">Agencja</a></li>
-        <li><a class="navigation__button navigation--active" href="portfolio.html" target="_self"
+        <li><a class="navigation__button navigation--active" href="index.html">Agencja</a></li>
+        <li><a class="navigation__button" href="portfolio.html" target="_self"
           >Portfolio</a></li>
         
         <li><a class="navigation__button" href="#Kontakt">Kontakt</a></li>
@@ -65,20 +134,21 @@
     <main>
 <section class="techno">
   <div class="container">
+    <div class="techno__filters">
   <ul class="techno__list-btn">
     <li><button type="button" class="techno__btn">Wszystkie</button></li> 
     <li><button type="button" class="techno__btn">Strony</button></li>
     <li><button type="button" class="techno__btn">Aplikacje</button></li>
     <li><button type="button" class="techno__btn">Dizajn</button></li>
     <li><button type="button" class="techno__btn">Marketing</button></li>
-  </ul>
+  </ul></div>
     <ul class="techno__list">
       <li> 
         <figure class="techno__product">
         <img
           src="images/port11.jpg"
           alt="Brunet w okularach i broda"
-          width="370"
+          width="450"
           height="294"
         /> <div class="techno__overlay">
           <p class="techno__overlay-text">
@@ -99,7 +169,7 @@
         <img
           src="images/port22.jpg"
           alt="Brunet w okularach i broda"
-          width="370"
+          width="450"
           height="294"
         /> <div class="techno__overlay">
           <p class="techno__overlay-text">
@@ -120,7 +190,7 @@
         <img
           src="images/port33.jpg"
           alt="Brunet w okularach i broda"
-          width="370"
+          width="450"
           height="294"
         /> <div class="techno__overlay">
           <p class="techno__overlay-text">
@@ -141,7 +211,7 @@
         <img
           src="images/port44.jpg"
           alt="Brunet w okularach i broda"
-          width="370"
+          width="450"
           height="294"
         /> <div class="techno__overlay">
           <p class="techno__overlay-text">
@@ -162,7 +232,7 @@
         <img
           src="images/port55.jpg"
           alt="Brunet w okularach i broda"
-          width="370"
+          width="450"
           height="294"
         /> <div class="techno__overlay">
           <p class="techno__overlay-text">
@@ -183,7 +253,7 @@
         <img
           src="images/port66.jpg"
           alt="Brunet w okularach i broda"
-          width="370"
+          width="450"
           height="294"
         /> <div class="techno__overlay">
           <p class="techno__overlay-text">
@@ -204,7 +274,7 @@
         <img
           src="images/port77.jpg"
           alt="Brunet w okularach i broda"
-          width="370"
+          width="450"
           height="294"
         /> <div class="techno__overlay">
           <p class="techno__overlay-text">
@@ -225,7 +295,7 @@
         <img
           src="images/port88.jpg"
           alt="Brunet w okularach i broda"
-          width="370"
+          width="450"
           height="294"
         /> <div class="techno__overlay">
           <p class="techno__overlay-text">
@@ -246,7 +316,7 @@
         <img
           src="images/port99.jpg"
           alt="Brunet w okularach i broda"
-          width="370"
+          width="450"
           height="294"
         /> <div class="techno__overlay">
           <p class="techno__overlay-text">
@@ -338,5 +408,6 @@
 </div>
     </footer>
     <script src="modal.js"></script>
+    <script src="modal-menu-workshop.js"></script>
   </body>
 </html>

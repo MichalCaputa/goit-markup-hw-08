@@ -313,7 +313,7 @@
         <!-- Dowolna tresc graficzna: zdjecie, wykres, diagram itp. -->
 
         <ul class="workers__list">
-          <li>
+          <li class="worker__item">
             <figure class="workers--bground">
               <img
                 src="images/Dev1.jpg"
@@ -345,7 +345,7 @@
                 </ul>
               </figcaption>
             </figure>
-          </li>
+          </li class="worker__item">
           <li>
             <figure class="workers--bground">
               <img
@@ -378,7 +378,7 @@
                 </ul>
               </figcaption>
             </figure>
-          </li><li>
+          </li><li class="worker__item">
             <figure class="workers--bground">
               <img
                 src="images/Dev3.jpg"
@@ -410,7 +410,7 @@
                 </ul>
               </figcaption>
             </figure>
-          </li><li>
+          </li><li class="worker__item">
             <figure class="workers--bground">
               <img
                 src="images/Dev4.jpg"
@@ -450,22 +450,22 @@
     <div class="clients container">
 <h2 class="clients__title"> Nasi klienci</h2>
 <ul class="clients__list">
-  <li><a href="company" class="clients__link"><svg width="100" height="100">
+  <li class="clients__item"><a href="company" class="clients__link"><svg width="100" height="100">
     <use href="./images/iconsv2.svg#icon-company-1"></use>
   </svg></a></li>
-  <li><a href="company" class="clients__link"><svg width="100" height="100">
+  <li class="clients__item"><a href="company" class="clients__link"><svg width="100" height="100">
     <use href="./images/iconsv2.svg#icon-company-2"></use>
   </svg></a></li>
-  <li><a href="company" class="clients__link"><svg width="100" height="100">
+  <li class="clients__item"><a href="company" class="clients__link"><svg width="100" height="100">
     <use href="./images/iconsv2.svg#icon-company-3"></use>
   </svg></a></li>
-  <li><a href="company" class="clients__link"><svg width="100" height="100">
+  <li class="clients__item"><a href="company" class="clients__link"><svg width="100" height="100">
     <use href="./images/iconsv2.svg#icon-company-4"></use>
   </svg></a></li>
-  <li><a href="company" class="clients__link"><svg width="100" height="100">
+  <li class="clients__item"><a href="company" class="clients__link"><svg width="100" height="100">
     <use href="./images/iconsv2.svg#icon-company-5"></use>
   </svg></a></li>
-  <li><a href="company" class="clients__link"><svg width="100" height="100">
+  <li class="clients__item"><a href="company" class="clients__link"><svg width="100" height="100">
     <use href="./images/iconsv2.svg#icon-company-6"></use>
   </svg></a></li>
 </ul>
@@ -537,10 +537,10 @@
         <label>
         <input type="email" name="E-mail" placeholder="E-mail" class="newsletter" />
         </label>
-        <button type="submit" class="news__btn">
+        <div><button type="submit" class="news__btn">
           <span>Zapisz się</span>
           <svg class="news__icon-send">
-            <use href="images/sprite-max.svg#icon-send-form"></use></svg></button>
+            <use href="images/sprite-max.svg#icon-send-form"></use></svg></button></div>
     </section>
   </div>
       </footer>

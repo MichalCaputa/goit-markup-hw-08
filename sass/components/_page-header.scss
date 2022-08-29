@@ -16,13 +16,15 @@
     align-items: center;
     max-width: 480px;
   }
-  .header-container__additional {
-    display: flex;
-    justify-content: space-between;
-  }
-  @media screen and (min-width: $phone) {
-    .container {
-      max-width: 480px;
+  .header-container {
+    background-color: #ffffff;
+    border-color: #ececec;
+    border-bottom: 1px solid #ececec;
+
+    &__additional {
+      display: flex;
+      justify-content: space-between;
+      max-width: 768px;
     }
   }
 }
@@ -34,6 +36,96 @@
   }
   .menu-toggle {
     display: none;
+  }
+  .header-container {
+    background-color: #ffffff;
+    border-color: #ececec;
+    border-bottom: 1px solid #ececec;
+
+    &__additional {
+      display: flex;
+      justify-content: space-between;
+      max-width: 768px;
+    }
+  }
+  .header-container {
+    background-color: $head-background;
+    border-color: #ececec;
+    border-bottom: 1px solid #ececec;
+    &__additional {
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+  }
+  .navigation {
+    display: flex;
+
+    &__list {
+      display: flex;
+      gap: 46px;
+      align-items: center;
+      padding: 0;
+    }
+    &__button {
+      color: $black-color;
+      position: relative;
+      font-weight: 500;
+      font-size: 14px;
+      &:hover,
+      &:focus {
+        color: $select-bgcolor;
+        cursor: pointer;
+        transition: background 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+    &--active::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 34.5px;
+      background: $-blue;
+      height: 4px;
+      border-radius: 10px 10px 10px 10px;
+    }
+  }
+  .contact-container {
+    display: flex;
+    align-items: center;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: auto;
+      padding: 0;
+      flex-direction: column;
+      align-items: left;
+      gap: 10px;
+    }
+    &__list-element {
+      display: flex;
+      align-items: center;
+      fill: $grey-color;
+    }
+    &__link {
+      color: $grey-color;
+      display: flex;
+      font-weight: 500;
+      font-size: 14px;
+      align-items: center;
+      gap: 10px;
+      &:hover,
+      &:focus {
+        color: $select-bgcolor;
+        fill: $-blue;
+        cursor: pointer;
+        transition: background 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
   }
 }
 // Desktop
